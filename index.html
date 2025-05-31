@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responsive 3D Parallax Website</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive 3D Parallax Website</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+    <body>
+        <header>
+            <nav>
+                <img class="logo" src="img/logo.png" alt="logo" />
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign up</a></li>
+                    <li class="search">
+                        <a href="#"
+                            ><i class="fa-solid fa-magnifying-glass"></i
+                        ></a>
+                    </li>
+                    <li class="hamburger">
+                        <a href="#"><div class="bar"></div></a>
+                    </li>
+                    <link rel="stylesheet" href="style.css" />
+                </ul>
+            </nav>
+        </header>
 
-<body>
+        <main>
+            <div class="vignette"></div>
+            <img src="img/background.png" data-speedx="0.3" data-speedy="0.29" data-speedz="0" data-rotation="0" class="parallax bg-img" />
+            <img src="img/fog_7.png" data-speedx="0.27" data-speedy="0.26" data-speedz="0" data-rotation="0" class="parallax fog-7" />
+            <img src="img/mountain_10.png" data-speedx="0.24" data-speedy="0.23" data-speedz="0" data-rotation="0" class="parallax mountain-10" />
+            <img src="img/fog_6.png" data-speedx="0.21" data-speedy="0.2" data-speedz="0" data-rotation="0" class="parallax fog-6" />
+            <img src="img/mountain_9.png" data-speedx="0.18" data-speedy="0.17" data-speedz="0.15" data-rotation="0" class="parallax mountain-9" />
+            <img src="img/mountain_8.png" data-speedx="0.16" data-speedy="0.15" data-speedz="0" data-rotation="0.02" class="parallax mountain-8" />
+            <img src="img/fog_5.png" data-speedx="0.155" data-speedy="0.14" data-speedz="0" data-rotation="0" class="parallax fog-5" />
+            <img src="img/mountain_7.png" data-speedx="0.1" data-speedy="0.09" data-speedz="0" data-rotation="0.09" class="parallax mountain-7" />
+            <div class="text parallax" data-speedx="0.07" data-speedy="0.07" data-speedz="0.07" data-rotation="0.11">
+                <h2>China</h2>
+                <h1>Zhangjiajie</h1>
+            </div>
+            <img src="img/mountain_6.png" data-speedx="0.095" data-speedy="0.08" data-speedz="0.05" data-rotation="0.05" class="parallax mountain-6" />
+            <img src="img/fog_4.png" data-speedx="0.08" data-speedy="0.07" data-speedz="0" data-rotation="0" class="parallax fog-4" />
+            <img src="img/mountain_5.png" data-speedx="0.075" data-speedy="0.074" data-speedz="0.13" data-rotation="0.15" class="parallax mountain-5" />
+            <img src="img/fog_3.png" data-speedx="0.07" data-speedy="0.069" data-speedz="0" data-rotation="0" class="parallax fog-3" />
+            <img src="img/mountain_4.png" data-speedx="0.065" data-speedy="0.064" data-speedz="0.35" data-rotation="0" class="parallax mountain-4" />
+            <img src="img/mountain_3.png" data-speedx="0.063" data-speedy="0.059" data-speedz="0.32" data-rotation="0" class="parallax mountain-3" />
+            <img src="img/fog_2.png" data-speedx="0.055" data-speedy="0.053" data-speedz="0" data-rotation="0" class="parallax fog-2" />
+            <img src="img/mountain_2.png" data-speedx="0.05" data-speedy="0.049" data-speedz="0.42" data-rotation="0" class="parallax mountain-2" />
+            <img src="img/mountain_1.png" data-speedx="0.045" data-speedy="0.043" data-speedz="0.53" data-rotation="0.2" class="parallax mountain-1" />
+            <img src="img/sun_rays.png" data-speedx="0.032" data-speedy="0.03" data-speedz="0" data-rotation="0" class="sun-rays" />
+            <img src="img/black_shadow.png" data-speedx="0.025" data-speedy="0.021" data-speedz="0" data-rotation="0" class="black-shadow" />
+            <img src="img/fog_1.png" data-speedx="0.01" data-speedy="0.005" data-speedz="0.01" data-rotation="0" class="parallax fog-1" />
+        </main>
 
-
-  <script src="js/gsap.min.js"></script>
-  <script src="js/app.js" defer></script>
-</body>
-
+        <script src="js/app.js" defer></script>
+    </body>
 </html>
